@@ -61,7 +61,6 @@ RAG/
 │
 ├── notebook/
 │   ├── document.ipynb
-│   ├── pdf_loader.ipynb
 │   └── images used in the notebooks
 │
 ├── src/
