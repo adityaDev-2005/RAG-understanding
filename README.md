@@ -63,8 +63,6 @@ RAG/
 │   ├── document.ipynb
 │   └── images used in the notebooks
 │
-├── src/
-│   └── Python source code
 │
 ├── rag_basics.txt
 │   └── Notes about fundamental RAG concepts
