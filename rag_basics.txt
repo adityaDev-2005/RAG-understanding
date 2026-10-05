@@ -1,0 +1,37 @@
+Retrieval-Augmented Generation(RAG) is a way to optimize the output of an LLM
+
+major disadvantages of LLM :-
+a. based on fix time data so queries after that, it will give random answers which is known as "hallucinating"
+b. instead of fine-tuning we can fix it by impleting the RAG pipeline
+
+data parsing - how do we read the data and then how do we chunk the data because we need to store the data in a "Vector Database"
+
+Vector Database : 
+vectors:numerical representation for text so that we can apply algorithms like similarity search, cosine similarity
+
+data injestion: converting data into embeddings and then storing them in a database
+
+The normal flow of an LLM conversation was:
+
+USER --> Query+Prompt --> output
+
+but with RAG we can make it like 
+
+USER --> Query+Prompt (made embeddings) ---> Vector database (so that similarity search is applied) --> (we get context and then we right an instruction called prompt) ---> LLM ---> output
+(The pipeline mentioned above is a tradional RAG pipeline known as the retrieval pipeline)
+
+Perplexity --> based on RAG pipeline
+
+2 Important pipelines :
+1.Data Injestion pipeline and 2.Retrieval pipeline:
+data injestion --> data parsing --> embedding --> retriever (give context to the LLM and this part is known as "Retrieval pipeline")--> LLM --> output (generating)
+(the above process is known as Augmentation) 
+
+  
+1. Data Injestion
+let's say we have different files like PDF, HTML, Excel so we need to see how we can do the data parsing and then convert into the document structure 
+After data parsing, the next step is chunking.
+Why do we need chunking?
+It is basically that we are dividing into smaller parts. The reason we do is because every LLM model with respect to embeddings they have a fixed context size. We cant give a file more than the context size. 
+Then after this process, for every chunking we apply embeddings and then store these embeddings into a Vector Database, where everything will be stored as vectors.
+Then after storing, we will be able to apply any kind of similarity search. 

@@ -1,0 +1,12 @@
+Machine Learning (ML) is a branch of Artificial Intelligence that enables systems to learn from data, identify patterns, and make decisions with minimal human intervention.  Instead of being explicitly programmed, ML models improve through experience by processing large datasets. 
+
+→ Supervised Learning: Models learn from labeled data, mapping inputs to known outputs. Common in tasks like spam detection, image classification, and predicting house prices. 
+→ Unsupervised Learning: Finds hidden patterns in unlabeled data. Used for customer segmentation, anomaly detection, and dimensionality reduction (e.g., PCA). 
+→ Semi-Supervised Learning: Combines a small amount of labeled data with large unlabeled sets. Useful in medical imaging and speech recognition where labeling is costly. 
+→ Reinforcement Learning: Agents learn by trial and error using rewards or penalties. Powers autonomous vehicles, robotics, and game-playing AI. 
+
+ML is widely applied across industries: → Healthcare: Disease prediction, medical image analysis.
+→ Finance: Fraud detection, credit scoring, algorithmic trading.
+→ Retail: Personalized recommendations, demand forecasting.
+→ Manufacturing: Predictive maintenance, defect detection.
+→ Transportation: Route optimization, self-driving cars. 
